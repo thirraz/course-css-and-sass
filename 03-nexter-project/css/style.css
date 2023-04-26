@@ -146,8 +146,29 @@ body {
   align-self: start;
   justify-self: start;
 }
+.header__seeon-text {
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  grid-column-gap: 1.5rem;
+  align-items: center;
+  font-size: 1.6rem;
+  color: #aaa;
+}
+.header__seeon-text::before, .header__seeon-text::after {
+  content: "";
+  height: 1px;
+  display: block;
+  background-color: currentColor;
+}
+.header__seeon-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 3rem;
+  justify-items: center;
+}
 .header__seeon-logos img {
   height: 2.5rem;
+  filter: brightness(70%);
 }
 
 .realtors {
